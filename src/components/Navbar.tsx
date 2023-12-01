@@ -11,7 +11,7 @@ const Navbar = () => {
         className="py-3"
       />
 
-      <ul className="flex flex-row  list-none w-100 m-4 mr-10">
+      <ul className="flex flex-row  list-none w-100">
         <li className="px-2">Home</li>
         <li className="px-2">About</li>
         <li className="px-2">Services</li>
