@@ -1,4 +1,4 @@
-import Head from "next/head"
+import Head from "next/head";
 import Hero from "../components/LandingPage/Hero";
 import About from "../components/LandingPage/About";
 import Services from "../components/LandingPage/Services";
@@ -9,16 +9,16 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-    <Head>
-      <title>Mara Geo | Home</title>
-      <meta name="keywords" content="GIS, Consultancy, Geospatial"/>
-    </Head>
-    
-      <Hero/>
-      <About/>
-      <Services/>
-      <Testimonials/>
-      <Footer/>
+      <Head>
+        <title>Mara Geo | Home</title>
+        <meta name="keywords" content="GIS, Consultancy, Geospatial" />
+      </Head>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Testimonials />
+      <Footer />
     </>
-  )
+  );
 }
