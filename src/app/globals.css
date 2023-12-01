@@ -6,6 +6,7 @@
 
   /* Colors */
   --color-primary: #ed931c;
+  --color-secondary: #ae6200;
   --color-dark-grey: #474747;
   
   --foreground-rgb: 0, 0, 0;
@@ -16,11 +17,12 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #E5E5E5; 
+  overflow-x: hidden;
 }
 
-nav ul{
+.navbar nav ul{
   margin-right: 10rem;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 h2{
@@ -53,4 +55,3 @@ p{
   padding: 3rem;
   border-radius: 1rem;
 }
-
