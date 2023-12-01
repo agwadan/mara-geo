@@ -43,3 +43,14 @@ p{
 .right-half .img-container{
   padding-top: 10rem;
 }
+
+.service__card{
+  max-width: 20rem;
+}
+
+.service__card .container{
+  background-color: #cbcbcb;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
