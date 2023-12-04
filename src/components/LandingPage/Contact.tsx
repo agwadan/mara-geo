@@ -6,7 +6,7 @@ const Contact = () => {
       <h2>Contact Us</h2>
       <div className="grid grid-cols-2 mt-5rem">
         {/* Grid 1 */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col justify-center h-full gap-4">
           <div className="flex flex-col justify-center py-4 items-center bg-primary max-w-xs rounded-1rem">
             <MdLocalPhone />
             <p>+256754423432</p>
@@ -22,18 +22,18 @@ const Contact = () => {
         {/* Grid 2 */}
         <form className="gap-5 " action="">
           <input
-            className="py-2 px-4 rounded-md m-3"
+            className="py-2 px-4 rounded-md m-3 outline-none w-full"
             type="text"
-            placeholder="Name"
+            placeholder="Full Name"
           />
           <input
-            className="py-2 px-4 rounded-md ml-3"
+            className="py-2 px-4 rounded-md m-3 outline-none w-full"
             type="email"
             placeholder="Email"
           />
           <br />
           <textarea
-            className="py-2 px-4 rounded-md ml-3 w-full h-full"
+            className="py-2 px-4 rounded-md m-3 outline-none w-full h-40"
             placeholder="Message"
           />
         </form>
