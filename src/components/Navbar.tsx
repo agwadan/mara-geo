@@ -13,10 +13,10 @@ const Navbar = () => {
         />
 
         <ul className="flex flex-row  list-none w-100">
-          <li className="px-2">Home</li>
-          <li className="px-2">About</li>
-          <li className="px-2">Services</li>
-          <li className="px-2">Contact</li>
+          <li className="px-2 cursor-pointer hover:text-secondary">Home</li>
+          <li className="px-2 cursor-pointer hover:text-secondary">About</li>
+          <li className="px-2 cursor-pointer hover:text-secondary">Services</li>
+          <li className="px-2 cursor-pointer hover:text-secondary">Contact</li>
         </ul>
       </nav>
     </div>

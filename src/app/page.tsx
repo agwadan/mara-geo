@@ -5,6 +5,7 @@ import Services from "../components/LandingPage/Services";
 import Testimonials from "../components/LandingPage/Testimonials";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Contact from "@/components/LandingPage/Contact";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <Testimonials />
+      <Contact />
       <Footer />
     </>
   );

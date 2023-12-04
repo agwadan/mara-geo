@@ -14,21 +14,29 @@ const Footer = () => {
         />
         <nav>
           <ul className="flex justify-center items-center list-none ">
-            <li className="px-2 text-white">Home</li>
-            <li className="px-2 text-white">About</li>
-            <li className="px-2 text-white">Services</li>
-            <li className="px-2 text-white">Contact</li>
+            <li className="px-2 text-white cursor-pointer hover:text-primaryGrey">
+              Home
+            </li>
+            <li className="px-2 text-white cursor-pointer hover:text-primaryGrey">
+              About
+            </li>
+            <li className="px-2 text-white cursor-pointer hover:text-primaryGrey">
+              Services
+            </li>
+            <li className="px-2 text-white cursor-pointer hover:text-primaryGrey">
+              Contact
+            </li>
           </ul>
         </nav>
         <div className="social-links flex">
           <ul className="flex items-center justify-center text-white gap-4">
-            <li className="text-xl">
+            <li className="text-xl cursor-pointer hover:text-primaryGrey">
               <BsTwitterX />
             </li>
-            <li className="text-xl">
+            <li className="text-xl cursor-pointer hover:text-primaryGrey">
               <BsLinkedin />
             </li>
-            <li className="text-xl">
+            <li className="text-xl cursor-pointer hover:text-primaryGrey">
               <FaFacebook />
             </li>
           </ul>
