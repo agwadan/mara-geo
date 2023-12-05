@@ -6,16 +6,20 @@ const Contact = () => {
       <h2>Contact Us</h2>
       <div className="grid grid-cols-2 mt-5rem">
         {/* Grid 1 */}
-        <div className="flex flex-col justify-center h-full gap-4">
+        <div className="flex flex-col justify-center h-full gap-4 text-white">
           <div className="flex flex-col justify-center py-4 items-center bg-primary max-w-xs rounded-1rem">
             <MdLocalPhone />
-            <p>+256754423432</p>
-            <a href="tel:+1123-456-7890">Call Us Now</a>
+            <p className="text-white">+256754423432</p>
+            <a className="text-white" href="tel:+1123-456-7890">
+              <i>Call Us Now</i>
+            </a>
           </div>
           <div className="flex flex-col justify-center py-4 items-center bg-primary max-w-xs rounded-1rem">
             <MdAlternateEmail />
-            <p>info@marageo.com</p>
-            <a href="mailto:info@marageo.com">Send email</a>
+            <p className="text-white">info@marageo.com</p>
+            <a className="text-white" href="mailto:info@marageo.com">
+              <i>Send email</i>
+            </a>
           </div>
         </div>
 

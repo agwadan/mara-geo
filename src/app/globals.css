@@ -38,6 +38,10 @@ p{
   color: var(--color-dark-grey);
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
 .right-half{
   overflow: hidden;
 }
