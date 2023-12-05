@@ -8,7 +8,7 @@
   --color-primary: #ed931c;
   --color-secondary: #ae6200;
   --color-dark-grey: #474747;
-  
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -16,16 +16,16 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #E5E5E5; 
+  background: #E5E5E5;
   overflow-x: hidden;
 }
 
-.navbar nav ul{
+.navbar nav ul {
   margin-right: 10rem;
   gap: 1.5rem;
 }
 
-h2{
+h2 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
@@ -34,29 +34,43 @@ h2{
   padding: 1rem 1.5rem;
 }
 
-p{
+p {
   color: var(--color-dark-grey);
 }
 
-.right-half{
+section {
+  margin: 5rem 5rem;
+}
+
+section h2 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 2px solid var(--color-primary);
+  max-width: 40%;
+  padding: 1rem 1.5rem;
+}
+
+.right-half {
   overflow: hidden;
 }
 
-.right-half .img-container{
+.right-half .img-container {
   padding-top: 10rem;
 }
 
-.service__card{
+.service__card {
   max-width: 20rem;
 }
 
-.service__card .container{
+.service__card .container {
   background-color: #cbcbcb;
   padding: 3rem;
   border-radius: 1rem;
 }
 
-/* Contact Stylings */
-/* .contact textarea{
-max-width: 98%;
-} */
+.slick-prev:before,
+.slick-next:before {
+  color: var(--color-primary);
+}
