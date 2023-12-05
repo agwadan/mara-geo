@@ -72,5 +72,7 @@ section h2 {
 
 .slick-prev:before,
 .slick-next:before {
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
+  height: 2rem;
+  width: 2rem;
 }
