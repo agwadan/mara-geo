@@ -2,9 +2,10 @@ import { MdLocalPhone, MdAlternateEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div className="contact my-10rem mx-4rem flex flex-col justify-center items-center">
+    <section className="contact my-10rem mx-4rem flex flex-col justify-center items-center">
       <h2>Contact Us</h2>
-      <div className="grid grid-cols-2 mt-5rem sm:grid-cols-2">
+      <div className="grid grid-cols-2 mt-5rem sm:grid-cols-1 md:grid-cols-1 gap-10">
+
         {/* Grid 1 */}
         <div className="flex flex-col justify-center h-full gap-4 text-white">
           <div className="flex flex-col justify-center py-4 items-center bg-primary max-w-xs rounded-1rem">
@@ -26,23 +27,23 @@ const Contact = () => {
         {/* Grid 2 */}
         <form className="gap-5 " action="">
           <input
-            className="py-2 px-4 rounded-md m-3 outline-none w-full"
+            className="py-2 px-4 rounded-md my-3 outline-none w-full"
             type="text"
             placeholder="Full Name"
           />
           <input
-            className="py-2 px-4 rounded-md m-3 outline-none w-full"
+            className="py-2 px-4 rounded-md my-3 outline-none w-full"
             type="email"
             placeholder="Email"
           />
           <br />
           <textarea
-            className="py-2 px-4 rounded-md m-3 outline-none w-full h-40"
+            className="py-2 px-4 rounded-md my-3 outline-none w-full h-40"
             placeholder="Message"
           />
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

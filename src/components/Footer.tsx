@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="p-10 bg-secondary ">
-      <div className="grid  grid-cols-3 gap-6 sm:grid-cols-1 md:grid-cols-1">
+      <div className="grid  grid-cols-3 gap-10 sm:grid-cols-1 md:grid-cols-1">
 
         {/* Grid Item 1 */}
         <div className="flex justify-center items-center my-6">
