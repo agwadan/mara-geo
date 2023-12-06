@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar z-10 !important">
       <nav className=" fixed flex flex-row bg- justify-between items-center bg-primaryGrey w-screen">
         <Image
           src="./images/logo_main.svg"

@@ -16,6 +16,7 @@ const Hero = () => {
           Learn More
         </button>
       </div>
+
       {/* Right Half */}
       <div>
         <div className="right-half bg-primary">

@@ -8,10 +8,10 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      sm: { 'max': '480px' },
+      md: { 'max': '768px' },
+      lg: { 'max': '976px' },
+      xl: '977px',
     },
     extend: {
       colors: {
@@ -19,7 +19,7 @@ const config: Config = {
         secondary: '#ae6200',
         primaryGrey: '#E5E5E5',
       },
-      borderRadius:{
+      borderRadius: {
         '1rem': '1rem',
         '2rem': '2rem',
         '3rem': '3rem',
@@ -28,7 +28,7 @@ const config: Config = {
         '8rem': '8rem',
         '10rem': '10rem',
       },
-      spacing:{
+      spacing: {
         '1rem': '1rem',
         '2rem': '2rem',
         '4rem': '4rem',

@@ -26,14 +26,14 @@ const Testimonials = () => {
     dots: true,
     arrows: true, // Show next/prev arrows
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
 
   return (
     <section>
-      <div className="flex flex-col justify-center items-center">
+      <div className="-z-10 !important flex flex-col justify-center items-center">
       <h2>Testimonials</h2>
       </div>
        <Slider {...settings}>

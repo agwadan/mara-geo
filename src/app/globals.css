@@ -38,7 +38,6 @@ p {
   color: var(--color-dark-grey);
 }
 
-
 section {
   margin: 5rem 5rem;
 }
@@ -53,11 +52,9 @@ section h2 {
   padding: 1rem 1.5rem;
 }
 
-.right-half {
-a:hover{
+a:hover {
   text-decoration: underline;
 }
-
 
 .right-half .img-container {
   padding-top: 10rem;
