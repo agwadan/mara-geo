@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 h-screen">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-1 h-screen">
       {/* Left Half */}
-      <div className="flex flex-col justify-center ml-40 space-y-12">
+      <div className="flex flex-col justify-center pl-40 md:bg-primary md:pl-10 md:text-white space-y-12">
         <h1 className="text-5xl font-bold">Mara Geo</h1>
         <h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -19,7 +19,7 @@ const Hero = () => {
 
       {/* Right Half */}
       <div>
-        <div className="right-half bg-primary">
+        <div className="right-half bg-primary md:hidden">
           <div className=" img-container w-100 overflow-hidden h-screen">
             <Image
               alt="Map"
