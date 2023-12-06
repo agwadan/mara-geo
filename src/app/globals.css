@@ -56,10 +56,21 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Header Section */
+.navbar .show{
+  display: flex;
+}
+
+.navbar .hide{
+  display: none;
+}
+
 .right-half .img-container {
   padding-top: 10rem;
 }
 
+
+/* Services Section */
 .service__card {
   max-width: 20rem;
 }
@@ -70,6 +81,8 @@ a:hover {
   border-radius: 1rem;
 }
 
+
+/* Testimonials */
 .slick-prev:before,
 .slick-next:before {
   color: var(--color-primary) !important;
