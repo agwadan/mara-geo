@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
-  const [humbergerOpen, setHumbergerOpen] = useState(true);
+  const [humbergerOpen, setHumbergerOpen] = useState(false);
 
   return (
     <nav className="navbar z-10 !important">
