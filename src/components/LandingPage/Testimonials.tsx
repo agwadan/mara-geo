@@ -1,7 +1,7 @@
-'use client';
+"use client";
 import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const testimonies = [
   {
@@ -34,19 +34,21 @@ const Testimonials = () => {
   return (
     <section>
       <div className="-z-10 !important flex flex-col justify-center items-center">
-      <h2>Testimonials</h2>
+        <h2>Testimonials</h2>
       </div>
-       <Slider {...settings}>
-      {testimonies.map((testimonial) => (
-        <div key={testimonial.id} className=" p-10 w-auto !important">
-          <div className="bg-white p-20 rounded shadow-xl italic">
-            <p className="text-gray-800">" {testimonial.testimonial} "</p>
-            <p className="text-gray-600 mt-4 font-bold">{testimonial.name}</p>
-            <p className="text-gray-600 mt-4 font-bold">{testimonial.role}</p>
+      <Slider {...settings}>
+        {testimonies.map((testimonial) => (
+          <div key={testimonial.id} className=" p-10 w-auto !important">
+            <div className="bg-white p-20 rounded shadow-xl italic">
+              <p className="text-gray-800">
+                &quot; {testimonial.testimonial} &quot;
+              </p>
+              <p className="text-gray-600 mt-4 font-bold">{testimonial.name}</p>
+              <p className="text-gray-600 mt-4 font-bold">{testimonial.role}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </Slider>
+        ))}
+      </Slider>
     </section>
   );
 };
