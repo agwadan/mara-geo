@@ -7,6 +7,7 @@ import Testimonials from "../components/LandingPage/Testimonials";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "@/components/LandingPage/Contact";
+import Map from "@/components/LandingPage/Map";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Map />
       {/*  <Testimonials /> */}
       <Contact />
       <Footer />

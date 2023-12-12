@@ -89,3 +89,9 @@ a:hover {
   height: 2rem;
   width: 2rem;
 }
+
+
+/* Map Styling */
+.leaflet-container{
+  height: 30rem;
+}
