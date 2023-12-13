@@ -34,7 +34,7 @@ const customIcon = new Icon({
 
 const Map = () => {
   return (
-    <div>
+    <section id="map">
       <div className="!important flex flex-col justify-center items-center my-6rem">
         <h2>Project Locations</h2>
       </div>
@@ -51,7 +51,7 @@ const Map = () => {
           </Marker>
         ))}
       </MapContainer>
-    </div>
+    </section>
   );
 };
 

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar z-10 !important">
-      <div className=" fixed flex flex-row bg- justify-between items-center bg-primaryGrey w-full py-y px-6">
+      <div className=" fixed flex flex-row bg- justify-between items-center bg-primaryGrey w-full px-6">
         <Image
           src="./images/logo_main.svg"
           alt="Mara Geo"
@@ -18,13 +18,43 @@ const Navbar = () => {
         />
 
         <ul className="flex flex-row md:hidden list-none w-100 ">
-          <li className="px-2 cursor-pointer hover:text-secondary">Home</li>
-          <li className="px-2 cursor-pointer hover:text-secondary">About</li>
-          <li className="px-2 cursor-pointer hover:text-secondary">Services</li>
-          <li className="px-2 cursor-pointer hover:text-secondary">
-            Testimonials
+          <li>
+            <a
+              href="#home"
+              className="px-2 cursor-pointer hover:text-secondary"
+            >
+              Home
+            </a>
           </li>
-          <li className="px-2 cursor-pointer hover:text-secondary">Contact</li>
+          <li>
+            <a
+              href="#about"
+              className="px-2 cursor-pointer hover:text-secondary"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              className="px-2 cursor-pointer hover:text-secondary"
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#map" className="px-2 cursor-pointer hover:text-secondary">
+              Project Locations
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className=" px-2 cursor-pointer hover:text-secondary"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
 
         {/* Humberger Icon */}
@@ -57,7 +87,7 @@ const Navbar = () => {
               About
             </a>
             <a className="pl-6 border-t border-primaryGrey pt-4" href="#">
-              Our Services
+              Services
             </a>
             <a className="pl-6 border-t border-primaryGrey pt-4" href="#">
               Tools

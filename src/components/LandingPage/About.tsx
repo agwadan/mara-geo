@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="mt-32 md:mt-0">
+    <section id="about" className="mt-32 md:mt-0">
       <div className=" about flex flex-col justify-center items-center">
         <h2>Who We Are</h2>
         <p className="m-20">
@@ -39,7 +39,7 @@ const About = () => {
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

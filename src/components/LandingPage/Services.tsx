@@ -3,7 +3,7 @@ import ServicesCard from "./ServicesCard";
 
 const Services = () => {
   return (
-    <div className="inline text-center">
+    <section id="services" className="inline text-center">
       <div className="flex justify-center items-center w-screen mb-10">
         <h2 className="text-center">Our Services</h2>
       </div>
@@ -24,7 +24,7 @@ const Services = () => {
           buttonText="Request"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

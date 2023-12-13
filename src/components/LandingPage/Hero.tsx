@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-1 h-screen">
+    <header
+      id="home"
+      className="grid grid-cols-2 gap-4 md:grid-cols-1 h-screen"
+    >
       {/* Left Half */}
       <div className="flex flex-col justify-center pl-40 md:bg-primary md:pl-10 md:text-white space-y-12">
         <h1 className="text-5xl font-bold">Mara Geo</h1>
@@ -30,7 +33,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

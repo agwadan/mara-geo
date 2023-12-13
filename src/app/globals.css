@@ -52,7 +52,7 @@ section h2 {
   padding: 1rem 1.5rem;
 }
 
-a:hover {
+#contact a:hover {
   text-decoration: underline;
 }
 
