@@ -35,7 +35,9 @@ const customIcon = new Icon({
 const Map = () => {
   return (
     <div>
-      <h2>Map</h2>
+      <div className="!important flex flex-col justify-center items-center my-6rem">
+        <h2>Project Locations</h2>
+      </div>
       <MapContainer center={[0.3152, 32.5816]} zoom={6}>
         <TileLayer
           attribution='copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
