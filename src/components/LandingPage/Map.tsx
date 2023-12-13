@@ -2,6 +2,7 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const markers = [
   {
@@ -13,7 +14,7 @@ const markers = [
     popUp: "Addis Ababa",
   },
   {
-    geocode: [3.3869, 36.683],
+    geocode: [-3.3869, 36.683],
     popUp: "Arusha",
   },
   {
@@ -21,14 +22,14 @@ const markers = [
     popUp: "Kigali",
   },
   {
-    geocode: [4.0435, 39.6682],
+    geocode: [-4.0435, 39.6682],
     popUp: "Mombasa",
   },
 ];
 
 const customIcon = new Icon({
   iconUrl: "./images/icon _location_pin.png",
-  iconSize: [38, 38],
+  iconSize: [20, 30],
 });
 
 const Map = () => {
@@ -43,7 +44,7 @@ const Map = () => {
         {markers.map((marker) => (
           <Marker position={marker.geocode} icon={customIcon}>
             <Popup>
-              <h2>{marker.popUp}</h2>
+              <p>{marker.popUp}</p>
             </Popup>
           </Marker>
         ))}
