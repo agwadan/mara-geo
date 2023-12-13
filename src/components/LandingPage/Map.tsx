@@ -43,12 +43,8 @@ const Map = () => {
           attribution='copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {markers.map((marker) => (
-          <Marker
-            key={marker.geocode}
-            position={marker.geocode}
-            icon={customIcon}
-          >
+        {markers.map((marker, index) => (
+          <Marker key={index} position={marker.geocode} icon={customIcon}>
             <Popup>
               <p>{marker.popUp}</p>
             </Popup>
