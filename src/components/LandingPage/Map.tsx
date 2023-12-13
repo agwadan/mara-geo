@@ -44,7 +44,11 @@ const Map = () => {
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {markers.map((marker, index) => (
-          <Marker key={index} position={marker.geocode} icon={customIcon}>
+          <Marker
+            key={index}
+            position={{ lat: marker.geocode[0], lng: marker.geocode[1] }}
+            icon={customIcon}
+          >
             <Popup>
               <p>{marker.popUp}</p>
             </Popup>
