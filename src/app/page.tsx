@@ -1,4 +1,7 @@
 "use client";
+
+import dynamic from "next/dynamic";
+
 import Head from "next/head";
 import Hero from "../components/LandingPage/Hero";
 import About from "../components/LandingPage/About";
@@ -8,6 +11,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "@/components/LandingPage/Contact";
 import Map from "@/components/LandingPage/Map";
+
+const MapImport = dynamic(
+  () => {
+    return import("../components/LandingPage/Map");
+  },
+  { ssr: false }
+);
 
 export default function Home() {
   return (
@@ -20,7 +30,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <Map />
+      <MapImport />
       {/*  <Testimonials /> */}
       <Contact />
       <Footer />
