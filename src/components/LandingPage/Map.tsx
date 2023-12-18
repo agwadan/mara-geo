@@ -1,6 +1,5 @@
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
 import { useState } from "react";
 
@@ -33,14 +32,12 @@ const customIcon = new Icon({
 });
 
 const Map = () => {
-  const [geoData, setGeoData] = useState({ lat: 0.3152, long: 32.5816 });
-
   return (
     <section id="map">
-      <div className="!important flex flex-col justify-center items-center my-6rem">
+      <div className="z-0 !important flex flex-col justify-center items-center my-6rem">
         <h2>Project Locations</h2>
       </div>
-      <MapContainer center={[geoData.lat, geoData.long]} zoom={6}>
+      <MapContainer className="z-0" center={[0.3152, 32.5816]} zoom={6}>
         <TileLayer
           attribution='copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"

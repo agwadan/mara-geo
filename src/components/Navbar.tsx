@@ -7,7 +7,7 @@ const Navbar = () => {
   const [humbergerOpen, setHumbergerOpen] = useState(false);
 
   return (
-    <nav className="navbar z-10 !important">
+    <nav className="navbar relative z-50 !important">
       <div className=" fixed flex flex-row bg- justify-between items-center bg-primaryGrey w-full px-6">
         <Image
           src="./images/logo_main.svg"
