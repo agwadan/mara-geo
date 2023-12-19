@@ -1,19 +1,23 @@
+import { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useInView } from "framer-motion";
 
 const Hero = () => {
-  const [rotate, setRotate] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
     <header
       id="home"
       className="grid grid-cols-2 gap-4 md:grid-cols-1 h-screen"
+      ref={ref}
     >
       {/* Left Half */}
       <motion.div
         className="flex flex-col justify-center pl-40 md:bg-primary md:pl-10 md:text-white space-y-12"
         initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
         <h1 className="text-5xl font-bold">Mara Geo</h1>
@@ -34,7 +38,7 @@ const Hero = () => {
           <motion.div
             className=" img-container w-100 overflow-hidden h-screen"
             initial={{ opacity: 0, y: -40 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1 }}
           >
             <Image
