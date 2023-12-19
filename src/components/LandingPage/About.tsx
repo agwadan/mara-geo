@@ -1,9 +1,19 @@
-import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+
   return (
-    <section id="about" className="mt-32 md:mt-0">
-      <div className=" about flex flex-col justify-center items-center">
+    <section ref={ref} id="about" className="mt-32 md:mt-0">
+      <motion.div
+        className=" about flex flex-col justify-center items-center"
+        initial={{ opacity: 0, x: 60 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 1 }}
+      >
         <h2>Who We Are</h2>
         <p className="m-20">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -20,8 +30,13 @@ const About = () => {
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </p>
-      </div>
-      <div className=" about flex flex-col justify-center items-center">
+      </motion.div>
+      <motion.div
+        className=" about flex flex-col justify-center items-center"
+        initial={{ opacity: 0, x: -60 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 1 }}
+      >
         <h2>Why We Do What We Do</h2>
         <p className="m-20">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -38,7 +53,7 @@ const About = () => {
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };
