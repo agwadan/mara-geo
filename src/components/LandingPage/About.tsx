@@ -1,17 +1,16 @@
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const About = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-  });
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   return (
     <section ref={ref} id="about" className="mt-32 md:mt-0">
       <motion.div
         className=" about flex flex-col justify-center items-center"
-        initial={{ opacity: 0, x: 60 }}
-        animate={inView ? { opacity: 1, x: 0 } : {}}
+        initial={{ opacity: 0, x: 80 }}
+        animate={isInView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 1 }}
       >
         <h2>Who We Are</h2>
@@ -33,8 +32,8 @@ const About = () => {
       </motion.div>
       <motion.div
         className=" about flex flex-col justify-center items-center"
-        initial={{ opacity: 0, x: -60 }}
-        animate={inView ? { opacity: 1, x: 0 } : {}}
+        initial={{ opacity: 0, x: -80 }}
+        animate={isInView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 1 }}
       >
         <h2>Why We Do What We Do</h2>

@@ -1,4 +1,5 @@
 import { MdLocalPhone, MdAlternateEmail } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (

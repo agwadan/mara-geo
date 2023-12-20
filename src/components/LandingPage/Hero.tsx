@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Hero = () => {
   const ref = useRef(null);

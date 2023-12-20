@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import ServicesCard from "./ServicesCard";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Services = () => {
   const ref = useRef(null);
@@ -13,7 +12,7 @@ const Services = () => {
       </div>
       <div className="cards-container flex flex-row flex-wrap justify-evenly">
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 80 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
         >
@@ -37,7 +36,7 @@ const Services = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: -60 }}
+          initial={{ opacity: 0, y: -80 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
         >
