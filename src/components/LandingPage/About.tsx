@@ -6,7 +6,7 @@ const About = () => {
   const isInView = useInView(ref);
 
   return (
-    <section ref={ref} id="about" className="mt-32 md:mt-0">
+    <section ref={ref} id="about" className="mt-32 md:mt-0 sm:m-2">
       <motion.div
         className=" about flex flex-col justify-center items-center"
         initial={{ opacity: 0, x: 80 }}
@@ -14,7 +14,7 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <h2>Who We Are</h2>
-        <p className="m-20">
+        <p className="m-20 sm:m-8 sm:text-center">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -37,7 +37,7 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <h2>Why We Do What We Do</h2>
-        <p className="m-20">
+        <p className="m-20 sm:m-8 sm:text-center">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta

@@ -1,16 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
 import Head from "next/head";
 import Hero from "../components/LandingPage/Hero";
 import About from "../components/LandingPage/About";
 import Services from "../components/LandingPage/Services";
-import Testimonials from "../components/LandingPage/Testimonials";
+//import Testimonials from "../components/LandingPage/Testimonials";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "@/components/LandingPage/Contact";
-import Map from "@/components/LandingPage/Map";
 
 const MapImport = dynamic(
   () => {

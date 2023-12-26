@@ -53,7 +53,7 @@ const Contact = () => {
             placeholder="Full Name"
             initial={{ opacity: 0, x: -60 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.3 }}
           />
           <motion.input
             className="py-2 px-4 rounded-md my-3 outline-none w-full"
@@ -61,7 +61,7 @@ const Contact = () => {
             placeholder="Email"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.3 }}
           />
           <br />
           <motion.textarea
@@ -69,7 +69,7 @@ const Contact = () => {
             placeholder="Message"
             initial={{ opacity: 0, x: 60 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.3 }}
           />
         </form>
       </div>
