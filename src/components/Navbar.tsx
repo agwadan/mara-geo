@@ -80,19 +80,39 @@ const Navbar = () => {
               <RxCross2 />
             </button>
 
-            <a className="pl-6 border-t border-primaryGrey pt-4" href="#">
+            <a
+              className="pl-6 border-t border-primaryGrey pt-4"
+              href="#"
+              onClick={() => setHumbergerOpen(false)}
+            >
               Home
             </a>
-            <a className="pl-6 border-t border-primaryGrey pt-4" href="#About">
+            <a
+              className="pl-6 border-t border-primaryGrey pt-4"
+              href="#about"
+              onClick={() => setHumbergerOpen(false)}
+            >
               About
             </a>
-            <a className="pl-6 border-t border-primaryGrey pt-4" href="#">
+            <a
+              className="pl-6 border-t border-primaryGrey pt-4"
+              href="#services"
+              onClick={() => setHumbergerOpen(false)}
+            >
               Services
             </a>
-            <a className="pl-6 border-t border-primaryGrey pt-4" href="#">
-              Tools
+            <a
+              className="pl-6 border-t border-primaryGrey pt-4"
+              href="#map"
+              onClick={() => setHumbergerOpen(false)}
+            >
+              Project Locations
             </a>
-            <a className="pl-6 border-t border-primaryGrey pt-4" href="#">
+            <a
+              className="pl-6 border-t border-primaryGrey pt-4"
+              href="#contact"
+              onClick={() => setHumbergerOpen(false)}
+            >
               Contact
             </a>
           </div>
