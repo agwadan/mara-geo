@@ -21,13 +21,19 @@ const Hero = () => {
       >
         <h1 className="text-5xl font-bold">Mara Geo</h1>
         <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          We have a new upcoming course titled “GIS for Climate Risk Analysis
+          and Actionable Insights”(CRAAI). The course is designed to provide a
+          comprehensive understanding of the complex challenges posed by climate
+          change and equip participants with the tools and knowledge necessary
+          to assess, mitigate, and respond to climate-related risks. This course
+          will delve into the interdisciplinary nature of climate risk analysis,
+          incorporating scientific, economic, social, and policy perspectives to
+          offer a holistic view of the subject.
         </h3>
         {/* Buttons */}
 
         <button className="bg-black text-white inline-block py-4 rounded max-w-xs">
-          Learn More
+          Sign up for CRAAI
         </button>
       </motion.div>
 
