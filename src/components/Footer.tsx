@@ -6,16 +6,15 @@ const Footer = () => {
   return (
     <footer className="p-10 bg-secondary ">
       <div className="grid  grid-cols-3 gap-10 sm:grid-cols-1 md:grid-cols-1">
-
         {/* Grid Item 1 */}
         <div className="flex justify-center items-center my-6">
-        <Image
-          src={"./images/logo_white.svg"}
-          alt="Mara Geo"
-          height={100}
-          width={100}
+          <Image
+            src={"./images/logo_white.svg"}
+            alt="Mara Geo"
+            height={100}
+            width={100}
           />
-          </div>
+        </div>
 
         {/* Grid Item 2 */}
         <nav className="flex justify-center items-center list-none my-6">
@@ -49,10 +48,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
       </div>
       <p className="text-xs font-xs text-white text-center my-10">
-        <i>&copy; 2023 Mara Geo</i>
+        <i>&copy; {new Date().getFullYear()} Mara Geo</i>
       </p>
     </footer>
   );
